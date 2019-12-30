@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" style="-fx-background-color: -fx-gray-color" styleClass="stack-pane" stylesheets="@../../layouts/CSS/maincss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.KeyMapController">
+    <BorderPane style="-fx-background-color: -fx-gray-color">
+        <top>
+            <AnchorPane prefHeight="40.0" prefWidth="839.0" styleClass="tittlePaneBackground" BorderPane.alignment="CENTER">
+                <children>
+                    <JFXButton fx:id="home_btn" layoutX="14.0" layoutY="13.0" onAction="#homeEvent" styleClass="navigationButton" text=" " AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <graphic>
+                            <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../../../icons/home.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </JFXButton>
+
+                    <Label layoutX="135.0" layoutY="3.0" onMouseClicked="#showBasicInfo" prefHeight="40.0" prefWidth="261.0" text="Key Map" textFill="#FFFF">
+                        <font>
+                            <Font name="Segoe UI" size="30.0" />
+                        </font>
+                    </Label>
+
+
+                </children>
+            </AnchorPane>
+        </top>
+        <left>
+            <VBox prefWidth="30" spacing="10.0" styleClass="dark-background" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <JFXButton fx:id="openTest_btn" ellipsisString=" " onAction="#navigationActionEvent" prefHeight="30.0" prefWidth="30.0" styleClass="panelButtonColor">
+                    <graphic>
+                        <FontAwesomeIcon fx:id="open_icon" fill="#fffefe" glyphName="FOLDER" size="30" styleClass="icon" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="openStudents_btn" onAction="#navigationActionEvent" prefHeight="30.0" prefWidth="30.0" styleClass="panelButtonColor" text="  ">
+                    <graphic>
+                        <FontAwesomeIcon glyphName="USER" size="30" styleClass="icon" text="" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="newTest_btn" onAction="#navigationActionEvent" prefHeight="30.0" prefWidth="54.0" styleClass="panelButtonColor" text="  ">
+                    <graphic>
+                        <FontAwesomeIcon glyphName="FILE" size="30" styleClass="icon" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="openReport_btn" onAction="#navigationActionEvent" prefHeight="30" prefWidth="53.0" styleClass="panelButtonColor" text=" ">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../icons/report3.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+
+                <JFXButton fx:id="uploadTestKey_btn" onAction="#uploadTestKeyFromFile" prefHeight="30.0" prefWidth="30.0" styleClass="panelButtonColor" text=" ">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../icons/upload.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </VBox>
+        </left>
+
+        <center>
+            <AnchorPane styleClass="light-background" BorderPane.alignment="CENTER">
+                <children>
+                    <ScrollPane AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <content>
+                            <AnchorPane fx:id="anchorPaneResize" styleClass="light-background">
+                                <children>
+
+                                    <AnchorPane layoutX="57.0" layoutY="29.0" prefHeight="400.0" prefWidth="313.0" styleClass="bluebackground" stylesheets="@../../layouts/CSS/maincss.css" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="751.0" AnchorPane.topAnchor="29.0">
+                                        <children>
+
+
+
+                                            <JFXButton fx:id="keymap_save_button" graphicTextGap="30.0" layoutX="36.0" layoutY="200.0" onAction="#saveRadioData" prefHeight="46.0" prefWidth="244.0" styleClass="buttonsize" text="Save">
+                                                <graphic>
+                                                    <ImageView fitHeight="40.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../../../icons/save.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </JFXButton>
+                                        </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="keymap_anchor_radioMap" layoutX="310.0" layoutY="27.0" prefHeight="554.0" prefWidth="476.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="22.0">
+                                        <children>
+                                            <ScrollPane fx:id="scroll_pane" layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="462.0">
+                                                <content>
+                                                    <AnchorPane prefHeight="521.0" prefWidth="440.0" styleClass="light-background">
+                                                        <children>
+                                                            <GridPane fx:id="keymap_gridpane" prefHeight="-Infinity" prefWidth="-Infinity" styleClass="dark-background" stylesheets="@../../layouts/CSS/maincss.css" vgap="20.0">
+
+                                                            </GridPane>
+                                                        </children>
+                                                    </AnchorPane>
+                                                </content>
+                                            </ScrollPane>
+                                        </children>
+                                    </AnchorPane>
+
+
+                                </children>
+
+                            </AnchorPane>
+                        </content>
+                    </ScrollPane>
+                </children>
+            </AnchorPane>
+        </center>
+    </BorderPane>
+</StackPane>

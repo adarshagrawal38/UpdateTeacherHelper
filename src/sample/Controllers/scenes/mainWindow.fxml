@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" styleClass="stack-pane" stylesheets="@../../layouts/CSS/maincss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MainWindowController">
+    <AnchorPane fx:id="rootScene" styleClass="light-background">
+    <children>
+        <MediaView fx:id="mediaView">
+
+
+        </MediaView>
+
+        <AnchorPane layoutX="0.0" layoutY="0.0" styleClass="tittlePaneBackground" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="titlePaneHeading" layoutX="78.0" layoutY="3.0" styleClass="titlePaneHeading" text="Home" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="3.0">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+               <FontAwesomeIcon fill="#f8f7f7" glyphName="HOME" layoutX="10.0" layoutY="35.0" size="3em" wrappingWidth="24.142857551574707" />
+            </children>
+        </AnchorPane>
+        <BorderPane layoutX="500.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+
+            </top>
+            <center>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+
+                    <children>
+
+                        <JFXButton fx:id="btn_new" alignment="CENTER" graphicTextGap="20.0" onAction="#handelEvent" prefHeight="120.0" prefWidth="299.0" ripplerFill="#a49a9a" text="New" textFill="#eeeaea">
+                            <font>
+                                <Font name="Bell MT" size="33.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/addnew.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_open" graphicTextGap="20.0" onAction="#handelEvent" prefHeight="120.0" prefWidth="292.0" ripplerFill="#a49a9a" text="Open" textFill="#eeeaea">
+                            <font>
+                                <Font name="Bell MT" size="33.0" />
+                            </font>
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" glyphName="FOLDER" size="4em" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+
+</AnchorPane>
+
+</StackPane>

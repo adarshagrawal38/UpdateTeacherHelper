@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="1.0.1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/1_0_1_jar</output-path>
+    <root id="archive" name="1.0.1.jar">
+      <element id="module-output" name="1.0.1" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/look and fell repository/jlfgr-1_0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/fontawesomefx-8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/ExcelReadWrite/ooxml-schemas-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Downloads/Object to json/jackson-mapper-asl-1.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/ExcelReadWrite/xmlbeans-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/ExcelReadWrite/poi-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/ExcelReadWrite/poi-ooxml-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/jfoenix-8.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/ExcelReadWrite/commons-collections4-4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Jars/controlsfx-8.40.14/controlsfx-8.40.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Downloads/Object to json/jackson-core-asl-1.9.13.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

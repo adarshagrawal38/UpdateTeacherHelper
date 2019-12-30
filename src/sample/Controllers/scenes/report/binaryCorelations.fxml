@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" styleClass="stack-pane" stylesheets="@../../../layouts/CSS/maincss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.BinaryCorelationController">
+    <children>
+        <AnchorPane styleClass="anchor-pane">
+            <children>
+                <AnchorPane layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="200.0" styleClass="tittlePaneBackground" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                       <JFXButton fx:id="back_btn" layoutX="6.0" onAction="#titlePaneEvent" prefHeight="45.0" prefWidth="40.0" text=" " AnchorPane.leftAnchor="0.0">
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../icons/back.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></JFXButton>
+                        <Label fx:id="titlePaneHeading" layoutX="108.0" layoutY="3.0" onMouseClicked="#displayBasicInfo" styleClass="titlePaneHeading" text="Binary Corelation" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="3.0" />
+                    </children>
+                </AnchorPane>
+                <ScrollPane layoutX="7.0" layoutY="75.0" prefHeight="522.0" prefWidth="1218.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="75.0">
+                    <content>
+                        <AnchorPane fx:id="anchorPaneResize" styleClass="light-background">
+                            <children>
+                                <VBox layoutX="0" layoutY="30" fx:id="vbox" prefHeight="476.0" prefWidth="-Infinity" styleClass="light-background" />
+                            </children>
+                        </AnchorPane>
+
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

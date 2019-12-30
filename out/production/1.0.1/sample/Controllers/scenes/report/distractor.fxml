@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="stackPane" styleClass="stack-pane" stylesheets="@../../../layouts/CSS/maincss.css"
+           xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="sample.Controllers.OptionCorrelationController">
+    <children>
+        <AnchorPane styleClass="light-background">
+            <children>
+                <AnchorPane prefHeight="44.0" prefWidth="1014.0" styleClass="tittlePaneBackground"
+                            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+
+                        <JFXButton fx:id="back_btn" layoutX="6.0" layoutY="11.0" onAction="#titlePaneEvent" prefHeight="42.0"
+                                   prefWidth="58.0" styleClass="navigationButton" text=" " AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.topAnchor="0.0">
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../icons/back.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <Label fx:id="titlepane_Label" layoutX="108.0" layoutY="3.0" onMouseClicked="#showBasicInfo"
+                               styleClass="titlePaneHeading" text="Correlation">
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <JFXListView fx:id="listView" layoutX="11.0" layoutY="70.0" minWidth="989.0" prefHeight="383.0"
+                             prefWidth="1192.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0"
+                             AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0"/>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
