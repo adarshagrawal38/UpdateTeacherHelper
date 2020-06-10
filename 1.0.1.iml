@@ -10,24 +10,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://F:/Downloads/Object to json/jackson-core-asl-1.9.13.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://F:/Downloads/Object to json/jackson-mapper-asl-1.9.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../Jars/look and fell repository/jlfgr-1_0.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -101,6 +83,24 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../Jars/ExcelReadWrite/ooxml-schemas-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Jars/Object to json/jackson-core-asl-1.9.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Jars/Object to json/jackson-mapper-asl-1.9.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
